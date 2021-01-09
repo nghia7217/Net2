@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Đặt hàng thành công";
+    string success = ViewBag.Success;
+    var configSetting = (ShopEcommerce.Models.ConfigSetting)ViewBag.ConfigSetting;
+}
+
+<div class="section-content padding-y-sm">
+    <div class="container">
+        <article class="padding-y-sm">
+            <figure class="itemside">
+                <div class="aside align-self-center">
+                    <span class="icon-wrap icon-md round bg-success">
+                        <i class="fa fa-check white"></i>
+                    </span>
+                </div>
+                <figcaption class="text-wrap">
+                    <h5 class="title">Chào bạn,</h5>
+                    <p class="text-muted">
+                        Đơn hàng của bạn đã hoàn tất. <br />
+                        
+              
+                        Xin cảm ơn quý khách đã đặt hàng tại @configSetting.AppName !<br />
+                    </p>
+                </figcaption>
+            </figure>
+        </article>
+        <header class="section-heading heading-line" />
+    </div>
+</div>

@@ -1,0 +1,37 @@
+﻿@*@model ShopEcommerce.Models.Topic*@
+@{
+    var visitorCounter = (ShopEcommerce.Models.VisitorCounter)ViewBag.VisitorCounter;
+    var configSetting = (ShopEcommerce.Models.ConfigSetting)ViewBag.ConfigSetting;
+}
+<footer class="section-footer">
+    <div class="container">
+        <hr />
+        <section class="footer-top padding-top border-top-dark">
+            <div class="row">
+     
+                <aside class="col-sm-3  col-md-3 dark">
+                    <h5 class="title">Tài khoản của tôi</h5>
+                    <ul class="list-unstyled">
+                        <li> <a href="~/Account/Login"> Trang đăng nhập </a></li>
+                        <li> <a href="~/Account/Register"> Trang đăng ký </a></li>
+                        <li> <a href="~/Manage/"> Thiết lập tài khoản </a></li>
+                        <li> <a href="~/Cart"> Đơn hàng của tôi </a></li>
+                    </ul>
+                </aside>
+                <aside class="col-sm-3  col-md-3 dark">
+                    <h5 class="title">Dịch vụ khách hàng</h5>
+                    <ul class="list-unstyled">
+                        <li> <a href="#">Bảo hành</a></li>
+                        <li> <a href="#">Đổi trả hàng</a></li>
+                        <li> <a href="#">Thanh toán - Tài khoản</a></li>
+                        <li> <a href="#">Giờ phục vụ</a></li>
+                    </ul>
+                </aside>
+             
+            </div>
+            <br>
+        </section>
+        <hr />
+        
+    </div>
+</footer>
